@@ -1,7 +1,7 @@
 .product {
   margin-bottom: 32px;
 
-  @include onTablet {
+  @include on-tablet {
     margin-bottom: 0;
   }
 

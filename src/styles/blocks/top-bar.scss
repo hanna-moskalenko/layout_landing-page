@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
 
-  // padding-block: 24px;
+  padding-block: 24px;
 
   @include on-tablet {
     padding-block: 64px;
@@ -40,14 +40,16 @@
   }
 
   &__phone-number {
-    pointer-events: none;
+    display: none;
     opacity: 0;
-    transition: opacity 0.3s;
   }
 
   @include on-desktop {
     &__phone:hover &__phone-number {
+      display: block;
+      pointer-events: none;
       opacity: 1;
+      transition: opacity 0.3s;
     }
   }
 }

@@ -11,7 +11,7 @@
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/main.scss"/>
-    <link rel="icon" href="src/images/logo-2x.png"
+    <link rel="icon" href="images/images/favicon.png"
     type="image/png">
     <script
       src="scripts/main.js"
@@ -243,6 +243,8 @@
                   class="contact-us__inputs
                   section-input
                   section-input--align--left"
+                  required
+                  autocomplete="off"
                 >
                 <input
                   type="email"
@@ -250,9 +252,12 @@
                   class="contact-us__inputs
                   section-input
                   section-input--align--left"
+                  required
+                  autocomplete="off"
                 >
                 <textarea type="texterea" placeholder="Message"
-                class="contact-us__textarea section-textarea section-textarea--align--left"></textarea>
+                class="contact-us__textarea section-textarea section-textarea--align--left" required
+                autocomplete="off"></textarea>
                 <button
                   class="
                   contact-us__button

@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding-block: 24px;
 
   @include on-tablet {
@@ -46,8 +45,8 @@
 
   @include on-desktop {
     &__phone:hover &__phone-number {
-      display: block;
       pointer-events: none;
+      display: block;
       opacity: 1;
       transition: opacity 0.3s;
     }

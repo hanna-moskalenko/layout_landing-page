@@ -14,8 +14,8 @@
 
   &__button {
     cursor: pointer;
-    display: flex;
 
+    display: flex;
     grid-column: span 2;
     align-items: center;
     justify-content: center;
@@ -24,7 +24,6 @@
     height: 56px;
     margin-top: 40px;
     margin-bottom: 96px;
-
     padding: 0;
     border: none;
     border-radius: 8px;

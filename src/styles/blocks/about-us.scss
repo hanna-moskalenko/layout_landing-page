@@ -1,7 +1,9 @@
 .about-us {
+   @include section-padding-inline;
+
   --collams: 2;
 
-  position: relative;
+ position: relative;
 
   display: grid;
   column-gap: 20px;

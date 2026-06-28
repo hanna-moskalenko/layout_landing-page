@@ -1,4 +1,6 @@
-.recomended {
+.recommended {
+ @include section-padding-inline;
+
   &__products {
     @include page-grid;
 

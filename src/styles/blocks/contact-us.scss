@@ -1,4 +1,6 @@
 .contact-us {
+  @include section-padding-inline;
+
   --colums: 2;
 
   display: grid;
@@ -45,6 +47,7 @@
     font-family: Manrope, sans-serif;
 
     @include input-style;
+    @include reset-autofill;
   }
 
   &__inputs:first-of-type {
@@ -76,10 +79,18 @@
     height: 148px;
     margin-bottom: 32px;
     padding: 16px 14px;
+    border: 1px solid transparent;
 
     font-family: Manrope, sans-serif;
-
+    
     @include input-style;
+    @include reset-autofill;
+  }
+
+
+  &__textarea:focus {
+    border: 2px solid #f98921;
+    outline: none;
   }
 
   &__button {

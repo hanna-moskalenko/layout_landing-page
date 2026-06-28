@@ -24,6 +24,18 @@
   }
 }
 
+@mixin section-padding-inline() {
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 72px;
+  }
+
+  @include on-desktop {
+    padding-inline: 120px;
+  }
+}
+
 .container {
   @include content-padding-inline;
 }
@@ -58,4 +70,16 @@
   border-radius: 8px;
   color: #7e7e83;
   background-color: #f9f9f9;
+}
+
+@mixin reset-autofill($bg-color: #F9F9F9, $text-color:#000) {
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px $bg-color inset  !important;
+    transition: background-color 5000s ease-in-out 0s;
+    
+    -webkit-text-fill-color: $text-color !important;
+  }
 }

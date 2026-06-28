@@ -1,4 +1,5 @@
 .categories {
+  @include section-padding-inline;
   &__wrapper {
     display: grid;
     row-gap: 40px;
